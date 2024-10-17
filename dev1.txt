@@ -1,0 +1,75 @@
+PS C:\Users\USER\Desktop\SN_Java Script> git clone https://github.com/ShakthiSn/Java-Script-.git
+Cloning into 'Java-Script-'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+PS C:\Users\USER\Desktop\SN_Java Script> cd Java-Script
+cd : Cannot find path 'C:\Users\USER\Desktop\SN_Java Script\Java-Script' because it does not exist.
+At line:1 char:1
++ cd Java-Script
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\USER\D...ipt\Java-Script:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\USER\Desktop\SN_Java Script> cd Java-Script-
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git add dev.txt
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   dev.txt
+
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git commit -m "dev.txt added"
+[main 79ac594] dev.txt added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dev.txt
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 30.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShakthiSn/Java-Script-.git
+   a41d006..79ac594  main -> main
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> add dev1.txt
+add : The term 'add' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ add dev1.txt
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git add dev1.txt
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   dev1.txt
+
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git commit-m "dev1.txt is added"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git commit -m "dev1.txt is added"
+[main ebc983c] dev1.txt is added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dev1.txt
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 271 bytes | 38.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShakthiSn/Java-Script-.git
+   79ac594..ebc983c  main -> main
+PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> 
