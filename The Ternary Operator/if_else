@@ -1,0 +1,11 @@
+var valueOpen=true;
+var openString;
+if(valueOpen)
+{
+    openString='open';
+}
+else
+{
+    openString='closed';
+}
+console.log("currently openstring value is "+openString);
