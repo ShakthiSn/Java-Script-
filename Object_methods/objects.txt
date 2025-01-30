@@ -1,0 +1,4 @@
+1.Anything we can see inside flower bracket is called as object.
+2.object is combination of or set of properties.
+3.Each properties are key and value pair.
+4.values can be any data type.
