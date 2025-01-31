@@ -1,0 +1,3 @@
+push() will add elements at the end of the arrary.
+
+Pop() will remove elements at the end of the arrary.
