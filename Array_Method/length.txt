@@ -1,0 +1,1 @@
+it will count the elements present in the arrary. not index bassed.
