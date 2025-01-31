@@ -1,0 +1,2 @@
+shift() will remove elements from begginning  of the arrary.
+unshift() will add elements from begginning  of the arrary.
