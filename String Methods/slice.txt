@@ -1,0 +1,1 @@
+Slice() method to cut the part of the string based on index possition.
