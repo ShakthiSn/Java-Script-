@@ -1,0 +1,1 @@
+when the keyword is not present then the out is -1 if keyword is present then the output is length of the keyword.   
