@@ -1,0 +1,1 @@
+Trim() will remove the spaces from the beginning and ending.                  
