@@ -1,0 +1,2 @@
+convert string into array we use split().
+also convert array into string we use .toString().

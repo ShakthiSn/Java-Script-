@@ -1,0 +1,2 @@
+1. .toUpperCase() -all the characters are capital. 
+2. .toLowerCase() -all the characters are small letters. 

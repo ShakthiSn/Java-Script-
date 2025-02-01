@@ -1,1 +1,2 @@
 split() method used to cut sentences. 
+also convert string into array we use split

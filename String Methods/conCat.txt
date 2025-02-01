@@ -1,0 +1,1 @@
+1. conCat() ussed to add the elements or something to the string. 

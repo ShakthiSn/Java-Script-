@@ -1,0 +1,1 @@
+charAt() used to identify nth index.

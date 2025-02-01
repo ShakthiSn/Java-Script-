@@ -1,0 +1,2 @@
+Substr() used to get the nth index from and nth index to, in between it will count.
+ 
