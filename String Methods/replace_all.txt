@@ -1,0 +1,2 @@
+replace() will replace the first matching. 
+replaceAll() will replace the all the matching. 
