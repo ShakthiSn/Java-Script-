@@ -29,3 +29,17 @@ for(var i=0;i<nm.length;i++)
 // *** Script: Saranya
 // *** Script: Indhu
 // *** Script: Viji
+
+var nm = [45, 23, 10, 98, 76, 30, 13, 309, 78, 94, 33,55, 22, 87, 77, 54,23, 15];
+
+for (var i = 0; i <nm.length; i++) {
+	if(i==4||i==5)
+	{
+		continue;
+	}
+    gs.print(nm[i]);
+}
+
+// I won't print 4th, 5th elements
+
+
