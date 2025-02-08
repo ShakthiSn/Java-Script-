@@ -21,3 +21,15 @@ else
     gs.print("not found"); //*** Script: not found
 
 }
+
+
+var fn1="This video illustrates about how to design and develop a simple login page for web applications without using any database connectivity. Don";
+
+if(fn1.indexOf("Don")>-1)
+ {
+	gs.print("Keyword is found");
+
+}
+else{
+	gs.print("Keyword is Not found");
+}
