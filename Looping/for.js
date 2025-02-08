@@ -43,3 +43,25 @@ for (var i = 0; i <nm.length; i++) {
 // I won't print 4th, 5th elements
 
 
+var emails = 'sakthi@gmail.com$saranya@gmail.com$indhu@gmail.com$viji@gmail.com$shakthi$saranya$indhu$viji';
+var emsplt = emails.split("$");
+var em = emsplt.length;
+var emls = [];
+var nms = [];
+for (var i = 0; i < em; i++) 
+{
+    if (emsplt[i].indexOf('@')>-1 && emsplt[i].indexOf('.com')>-1) 
+	{
+        emls.push(emsplt[i]);
+    } else {
+        nms.push(emsplt[i]);
+    }
+}
+var Ema = emls.toString();
+var Nam = nms.toString();
+
+gs.print(Ema);
+gs.print(Nam);
+
+//*** Script: sakthi@gmail.com,saranya@gmail.com,indhu@gmail.com,viji@gmail.com
+//*** Script: shakthi,saranya,indhu,viji
