@@ -18,3 +18,14 @@ for(var i=0;i<nae.length;i++)
 *** Script: t
 *** Script: h
 *** Script: i */ 
+
+
+var nm=["Shakthi","Saranya","Indhu","Viji"];
+for(var i=0;i<nm.length;i++)
+{
+	gs.print(nm[i]);
+}
+// *** Script: Shakthi
+// *** Script: Saranya
+// *** Script: Indhu
+// *** Script: Viji
