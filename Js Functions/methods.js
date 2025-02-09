@@ -18,9 +18,20 @@ function fullName(fName,lName)
 	return fnl;
 }
 gs.print(fullName("Shakthi","Vel"));
-
-function emails(eMail)
+//eg......................
+function emails(mail) 
 {
-	if(eMail.i)
-	
+    var ismail = false;
+    if (mail.indexOf("@") > -1 && mail.indexOf(".com") > -1)
+	{
+        ismail = true;
+
+    } else 
+	{
+        ismail = false;
+
+    }
+    return ismail;
 }
+gs.print(emails("Sakthe@gmail.com"));
+gs.print(emails("Sakthe"));
