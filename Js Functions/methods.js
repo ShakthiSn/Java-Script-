@@ -35,3 +35,35 @@ function emails(mail)
 }
 gs.print(emails("Sakthe@gmail.com"));
 gs.print(emails("Sakthe"));
+
+
+//eg
+
+var allMails = "Shakthi@gmail.com,saranya@gmail.com,shakthe";
+var spml = allMails.split(',');
+for (var i = 0; i < spml.length; i++) {
+    if (emails(spml[i]) == false) {
+        gs.print("Invalid Email Address #");
+        break;
+    } else {
+        gs.print(spml[i]);
+    }
+
+}
+
+function emails(mail) {
+    var ismail = false;
+    if (mail.indexOf("@") > -1 && mail.indexOf(".com") > -1) {
+        ismail = true;
+
+    } else {
+        ismail = false;
+
+    }
+    return ismail;
+}
+
+/**** Script: Shakthi@gmail.com
+*** Script: saranya@gmail.com
+*** Script: Invalid Email Address #
+*/
