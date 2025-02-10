@@ -67,3 +67,21 @@ function emails(mail) {
 *** Script: saranya@gmail.com
 *** Script: Invalid Email Address #
 */
+
+var obj={
+	firstName:"Shakthe",
+	lastName:"vel",
+	qualification:"BCA",
+	isMale:true,
+	age:27,
+	family:{father:"Rave",
+	mother:"Kumutha",
+	sister:"Suje"},
+	fullName:function(){
+		return this.firstName+this.lastName+" "+this.qualification;
+	}
+
+
+}
+gs.print(obj.fullName());
+//*** Script: Shakthevel BCA
