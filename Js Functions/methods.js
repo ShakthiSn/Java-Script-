@@ -85,3 +85,12 @@ var obj={
 }
 gs.print(obj.fullName());
 //*** Script: Shakthevel BCA
+
+
+//variable declaration in function
+var fullName=function(firstName,latName){
+	return firstName+" "+latName;
+} 
+gs.print(fullName("Shakthi","Vel"));
+
+//*** Script: Shakthi Vel
