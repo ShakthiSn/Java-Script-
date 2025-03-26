@@ -61,18 +61,23 @@ alert(g_form.getActionName());   //it will return last clicked button name
 alert(g_form.getUniqueValue());  // retun sysID of current record      
 
 g_form.hideRelatedList('metrics');
-	g_form.showRelatedList('metrics');
-	g_form.hideRelatedLists();
-	g_form.showRelatedLists();
+g_form.showRelatedList('metrics');
+g_form.hideRelatedLists();
+g_form.showRelatedLists();
 
-	g_form.getElement("lookup.incident.caller_id").style.display='none';
-	g_form.getElement("sys_display.incident.caller_id").style.color='white';
-	g_form.getElement("sys_display.incident.caller_id").style.backgroundColor='red';
+g_form.getElement("lookup.incident.caller_id").style.display='none';
+g_form.getElement("sys_display.incident.caller_id").style.color='white';
+g_form.getElement("sys_display.incident.caller_id").style.backgroundColor='red';
 
 	
-	var fnm=g_form.getReference('caller_id').firstName;
-	alert(fnm);
-	var lb=g_form.getLabelOf('category');
-	alert(lb);
+var fnm=g_form.getReference('caller_id').firstName;
+alert(fnm);
+var lb=g_form.getLabelOf('category');
+alert(lb);
+var setlm=g_form.setLabelOf('category','Section');
 
-	var setlm=g_form.setLabelOf('category','Section');
+g_form.getIntValue();
+g_form.getDecimalValue();
+g_form.save();
+g_form.submit();
+
