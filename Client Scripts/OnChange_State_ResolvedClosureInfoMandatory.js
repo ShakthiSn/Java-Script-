@@ -3,15 +3,11 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
         return;
     }
     if (newValue == 6) {
-        g_form.setMandatory('u_choice_3', true);
-        g_form.setMandatory('u_string_4', true);
+        g_form.setMandatory('notes', true);
+        g_form.setMandatory('resolution_information', true);
     } else {
-        g_form.setMandatory('u_choice_3', false);
-        g_form.setMandatory('u_string_4', false);
+        g_form.setMandatory('notes', false);
+        g_form.setMandatory('resolution_information', false);
     }
-
-
-
-    //Type appropriate comment here, and begin script below
 
 }
