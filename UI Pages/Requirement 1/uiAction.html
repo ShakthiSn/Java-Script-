@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <label>Assigned to</label>
+    <g:ui_reference name='assto' id='assto' table='sys_user' query='active=true' completer='AJAXTableCompleter' ng-model='user' />
+
+    <br />
+    <g:dialog_buttons_ok_cancel ok='return validForm()' cancel='return onCancel()' />
+</j:jelly>
