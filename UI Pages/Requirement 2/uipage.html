@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <label> Resolution Code : </label>
+    <br /><select id="rcode">
+        <option value="solution provided">Solution Provided</option>
+        <option value="resolved by caller">Resolved by Caller</option>
+        <option value="duplicate">Duplicate</option>
+        <option value="resolved by problem">Resolved by Problem</option>
+        <option value="resolved by chnage">Resolved by Change</option>
+    </select>
+    <br />
+    <label>Resolution Notes :</label><br />
+    <textarea id="rnote"></textarea>
+    <br />
+    <g:dialog_buttons_ok_cancel ok='return validForm()' cancel='return onCancel()' />
+
+</j:jelly>
