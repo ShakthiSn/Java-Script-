@@ -1,0 +1,11 @@
+var user=new GlideRecord('sys_user');
+user.initialize();
+user.setValue('name','Shanmug Shakthi');
+user.setValue('first_name','Shanmug');
+user.setValue('last_name','Shakthi');
+user.setValue('user_name','shakthishanmug');
+user.setValue('title','manager');
+user.setValue('manager','62826bf03710200044e0bfc8bcbe5df1');
+user.setValue('department','221f79b7c6112284005d646b76ab978c');
+user.setValue('email','shakthishanmug@gmail.com');
+user.insert();

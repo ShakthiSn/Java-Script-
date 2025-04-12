@@ -31,7 +31,7 @@ PS C:\Users\USER\Desktop\SN_Java Script\Java-Script-> git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (2/2), done.
+Compressing objects: 1                          `00% (2/2), done.
 Writing objects: 100% (3/3), 275 bytes | 30.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/ShakthiSn/Java-Script-.git
