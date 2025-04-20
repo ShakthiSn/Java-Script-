@@ -13,22 +13,6 @@
 
 
 
-    // var err = '';
-    var objsuccess = {};
-    // var objError = {};
-    var inc = new GlideRecord('incident');
-    inc.initialize();
-    inc.caller_id = reqCaller;
-    inc.category = reqCategory;
-    inc.subcategory = reqSubCat;
-    inc.cmdb_ci = reqCmdbCi;
-    inc.short_description = reqShortD;
-    inc.description = reqDes;
-    inc.contact_type = reqContract;
-    inc.state = reqState;
-    inc.assignment_group = reqAssignmentGrp;
-    inc.assigned_to = reqAssignTo;
-    inc.insert();
 
 
 
@@ -203,19 +187,30 @@
 
 
 
+    // var err = '';
+    var objsuccess = {};
+    // var objError = {};
+    var inc = new GlideRecord('incident');
+    inc.initialize();
+    inc.caller_id = reqCaller;
+    inc.category = reqCategory;
+    inc.subcategory = reqSubCat;
+    inc.cmdb_ci = reqCmdbCi;
+    inc.short_description = reqShortD;
+    inc.description = reqDes;
+    inc.contact_type = reqContract;
+    inc.state = reqState;
+    inc.assignment_group = reqAssignmentGrp;
+    inc.assigned_to = reqAssignTo;
+    inc.insert();
 
-
-
-
+    // Return succes
     objsuccess.number = inc.number;
     objsuccess.sysID = inc.sys_id;
     objsuccess.status = 200;
-
-
-    // objError.staus = 401;
-    // objError.er = err;
     response.setBody(objsuccess);
-    // response.setBody(objError);
+    response.setStatus(201);
+
 
 
 
