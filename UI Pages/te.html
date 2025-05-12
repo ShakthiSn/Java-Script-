@@ -1,0 +1,26 @@
+<g:evaluate var="caseId" expression="RP.getWindowProperties().get('case_id')" />
+
+<g:ui_form>
+  <!-- Hidden input to pass case_id to JS -->
+  <input type="hidden" id="case_id" value="${caseId}" />
+
+  <label>Assigned to</label>
+  <g:ui_reference name="assto" id="assto" table="sys_user" query="active=true" />
+
+  <br />
+  <g:dialog_buttons_ok_cancel ok="return validForm()" cancel="return onCancel()" />
+</g:ui_form>
+
+
+
+<!--
+function validForm() {
+  var caseId = document.getElementById('case_id').value;
+  var assignedTo = document.getElementById('assto').value;
+
+  if (!assignedTo.trim()) {
+    alert('Assigned to is mandatory!');
+    return false;
+  }
+
+----------------->
