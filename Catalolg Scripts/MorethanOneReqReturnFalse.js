@@ -93,25 +93,25 @@ checkSubmission.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 });
 
 
-var checkSubmission = Class.create();
-checkSubmission.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+var alreadySubmitted = false;
 
+function onSubmit() {
+    if (alreadySubmitted) return true; // skip recheck on manual submit
 
-    getDetails: function() {
-        var gr = new GlideRecord('sc_req_item');
-        gr.addQuery('requested_for', this.getParameter('sysparm_req'));
-        gr.addQuery('sys_created_on', '>=', gs.beginningOfDay());
-        gr.addQuery('sys_created_on', '<=', gs.endOfDay());
-        gr.query();
-        if (gr.hasNext()) {
-            gs.log('true');
-            return true;
+    var reqby = g_form.getValue('requested_for');
+    var ga = new GlideAjax('checkSubmission');
+    ga.addParam('sysparm_name', 'getDetails');
+    ga.addParam('sysparm_req', reqby);
+    ga.getXMLAnswer(callback);
+
+    return false; // stop immediate submit until check completes
+
+    function callback(response) {
+        if (response == 'false') {
+            alreadySubmitted = true;
+            g_form.orderNow(); // ✅ proper submission for catalog item
         } else {
-            gs.log('false');
-            return false;
+            alert('Submission Blocked! You already have a request today.');
         }
-
-    },
-
-    type: 'checkSubmission'
-});
+    }
+}
