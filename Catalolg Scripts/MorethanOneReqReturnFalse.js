@@ -65,3 +65,53 @@ function onSubmit() {
         }
     }
 }
+
+
+new 
+
+    var checkSubmission = Class.create();
+checkSubmission.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+    getDetails: function() {
+        var gr = new GlideRecord('sc_req_item');
+        gr.addQuery('requested_for', this.getParameter('sysparm_req'));
+        gr.addQuery('sys_created_on', '>=', gs.beginningOfDay());
+        gr.addQuery('sys_created_on', '<=', gs.endOfDay());
+        gr.query();
+        if (gr.hasNext()) {
+            gs.log('true');
+            return true;
+        } else {
+            gs.log('false');
+            return false;
+        }
+
+    },
+
+    type: 'checkSubmission'
+});
+
+
+var checkSubmission = Class.create();
+checkSubmission.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+    getDetails: function() {
+        var gr = new GlideRecord('sc_req_item');
+        gr.addQuery('requested_for', this.getParameter('sysparm_req'));
+        gr.addQuery('sys_created_on', '>=', gs.beginningOfDay());
+        gr.addQuery('sys_created_on', '<=', gs.endOfDay());
+        gr.query();
+        if (gr.hasNext()) {
+            gs.log('true');
+            return true;
+        } else {
+            gs.log('false');
+            return false;
+        }
+
+    },
+
+    type: 'checkSubmission'
+});
